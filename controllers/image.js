@@ -1,4 +1,3 @@
-const { json } = require('body-parser');
 const Clarifai = require('clarifai');
 
 const app = new Clarifai.App({

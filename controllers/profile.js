@@ -9,7 +9,6 @@ const handleProfileGet = (req, res, db) => {
         }
     })
     .catch( err => res.status(404).json('no such user'))
-      
 }
 
 module.exports = {
