@@ -16,7 +16,7 @@ const db =knex({
           port : 5432,
           user : 'smart_brain_db_mi1e_user',
           password : 'uNDgQQsbZU5BrMNDvShO28U78Aha7OSz',
-          database : 'smart_brain_db_mi1e'
+          database : 'smart-brain-db'
 
       //connectionString : process.env.DATABASE_URL,
       //ssl: true,
