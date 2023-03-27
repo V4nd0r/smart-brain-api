@@ -2,7 +2,8 @@ const Clarifai = require('clarifai');
 
 // create a new Clarifai application instance with an API key
 const app = new Clarifai.App({
-    apiKey:'a5631b3fd6d648ee9b29d320e93cdbb0'
+    Key:'a5631b3fd6d648ee9b29d320e93cdbb0',
+    PAT : '08d1011ad0a74b9686fa3fe779dac1d4'
   });
 
 // function that handles API calls to the Clarifai model
