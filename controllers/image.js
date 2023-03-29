@@ -1,12 +1,6 @@
 const Clarifai = require('clarifai');
 const { ClarifaiStub, grpc } = require("clarifai-nodejs-grpc");
 
-const PAT = '08d1011ad0a74b9686fa3fe779dac1d4';
-const USER_ID = 'bryjlhrvhdt2';
-const APP_ID = 'my-first-application';
-const MODEL_ID = 'face-detection';
-const IMAGE_URL = imageUrl;
-
 const stub = ClarifaiStub.grpc();
 
 // This will be used by every Clarifai endpoint call
@@ -46,9 +40,9 @@ stub.PostModelOutputs(
 );
 
 // create a new Clarifai application instance with an API key
-//const app = new Clarifai.App({
-//    apiKey:'a5631b3fd6d648ee9b29d320e93cdbb0'
-//  });
+const app = new Clarifai.App({
+    apiKey:'a5631b3fd6d648ee9b29d320e93cdbb0'
+  });
 
 // function that handles API calls to the Clarifai model
 const handleApiCall = (req, res) => {  
